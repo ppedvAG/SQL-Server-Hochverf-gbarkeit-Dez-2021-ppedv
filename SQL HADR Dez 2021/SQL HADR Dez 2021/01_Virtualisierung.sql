@@ -44,3 +44,22 @@ Vorsicht beim Kopieren / Migrieren von VMs--> Hardwareausstattung steckt in Konf
 --die nun evtl nicht mehr stimmt
 
 * NUMA ) Zuordnung der Sockets zu Slots
+
+
+Bestand HV-SQL1
+
+C:\_SQLDBS\
+C:\_SQLDBS\
+C:\BACKUP
+
+Agent:		schulung\sqlAgent  ppedv2019!
+DB Server: schulung\svcSQL ppedv2019!
+
+
+RAM 2748
+MAXDOP 4
+
+
+
+
+
