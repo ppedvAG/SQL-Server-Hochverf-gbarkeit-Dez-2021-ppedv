@@ -11,4 +11,15 @@
 * Entscheidungsmatrix
  
 # Logshipping 
+
+# Spiegelung
+
+# Cluster
+* ISCSI Datenträger
+
+# toDo
+* Logfiles
+* Logins übertragen
+* Aufträge übertragen
+* Backups einrichten
  

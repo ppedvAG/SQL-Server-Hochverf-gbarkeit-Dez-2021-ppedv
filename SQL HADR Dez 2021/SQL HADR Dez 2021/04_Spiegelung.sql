@@ -36,6 +36,18 @@ WITH  FILE = 2,  NORECOVERY,  NOUNLOAD,  STATS = 5
 GO
 
 
+--KOnto für Spiegelung --> Rechte einrichten und Login
+
+--auf beiden Server
+USE [master]
+GO
+CREATE LOGIN [SQLDOM\svcSQL] FROM WINDOWS WITH DEFAULT_DATABASE=[master]
+GO
+
+GRANT CONNECT ON ENDPOINT::Spiegelung TO [SQLDOM\svcSQL]
+
+
+
 
 
 --TEST..
@@ -76,14 +88,14 @@ GO
 --HV-SQL 2 
 USE MASTER
 
-ALTER DATABASE SpiegelDB 
- SET PARTNER = 'TCP://nodeone.schulung.dom:5022'
+ALTER DATABASE LogShipping 
+ SET PARTNER = 'TCP://NodeONE.SQLDOM.dom:5022'
 GO 
 
 
 --auf HV-SQL1
 USE MASTER
 
-ALTER DATABASE SpiegelDB 
- SET PARTNER = 'TCP://NODETWO.SQLDOM.dom:5022'
+ALTER DATABASE LogShipping 
+ SET PARTNER = 'TCP://nodetwo.sqldom.dom:5022'
 GO 

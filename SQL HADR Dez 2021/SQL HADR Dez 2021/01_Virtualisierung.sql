@@ -60,6 +60,21 @@ RAM 2748
 MAXDOP 4
 
 
+				ServerNetz			ClientNetz
+HV-DC			192.168.138.1		192.168.137.1
+HV-SQL1			192.168.138.2		192.168.137.2
+HV-SQL2			192.168.138.3		192.168.137.3
+NTCLUST								192.168.137.4
+SQLCLUST							192.168.137.5
+SQLAVG								192.168.137.6
 
 
+
+
+
+192.168.1.1
+192.168.10.1
+
+TCP://nodetwo.sqldom.dom:5022
+TCP://nodeone.sqldom.dom:5022
 
